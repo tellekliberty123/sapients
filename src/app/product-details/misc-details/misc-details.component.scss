@@ -1,0 +1,17 @@
+.format-misc-details {
+    & .format-img {
+        float: left;
+        margin-right: 25px;
+        height: 900px;
+    }
+
+    & .format-text {
+        margin-bottom: 25px;
+    }
+
+    & .format-details {
+        & .format-text-container {
+            height: 800px;
+        }
+    }
+}

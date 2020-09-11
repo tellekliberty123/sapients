@@ -1,0 +1,29 @@
+<div class="format-nav-menu">
+    <div class="p-grid p-nogutter">
+        <div class="p-col-fixed p-justify-center" style="width: 800px; margin: 0 auto;">
+            <p-dialog header="Godfather I" [(visible)]="displayOutwear" [style]="{width: '50vw'}" [baseZIndex]="10000">
+                <form [formGroup]="formGroup">
+                    <div class="p-grid p-nogutter">
+                        <div class="p-col-12">
+                            <label>Please rate the Jacket</label>
+                            <label for="reviewTitleId">Review Title:</label>
+                            <input id="reviewTitleId" type="text" formControlName="reviewTitle" style="width:95%;">
+                        </div>
+                        <div class="p-col-12">
+                            <textarea formControlName="writeReview" rows="15" style="width: 95%;"></textarea>
+                        </div>
+                        <div class="p-col-12" style="white-space: nowrap;">
+                            Title: {{formGroup.controls['reviewTitle']}}<br/>
+                            Review Notes: {{formGroup.controls['writeReview']}}
+                        </div>
+                    </div>
+                </form>
+                <p-footer>
+                    <button type="button" pButton (click)="displayOutwear=false" label="Submit Review"></button>
+                </p-footer>
+            </p-dialog>
+            <p-menubar [model]="items">
+            </p-menubar>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+.format-reviewers {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 80px;
+    background-color: #00314F;
+
+    & .format-container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    & .format-content {
+        float: right;
+    }
+
+    & .format-review-title {
+        font-size: x-large;
+    }
+
+    & .format-img {
+        float: left;
+        margin-right: 35px;
+    }
+}

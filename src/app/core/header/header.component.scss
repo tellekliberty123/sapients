@@ -1,0 +1,17 @@
+.format-header {
+    background-color: #000000;
+    height: 135px;
+    padding-top: 35px;
+
+    & .format-search-entry {
+        margin-top: 3px;
+
+        & .format-search-input {
+            outline: none;
+            background-image:url('../../../assets/img/search-icon.png');
+            background-repeat:no-repeat;
+            background-position: right;
+            width: 350px;
+        }
+    }
+}

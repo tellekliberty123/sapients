@@ -1,0 +1,33 @@
+.format-unordered-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+    & li {
+        float: left;
+        margin-top: 5px;
+    }
+
+    & li a {
+        display: inline-block;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    & li a span,
+    & li a img {
+        margin-right: 5px;
+    }
+
+    & li a span::after {
+        content: " | ";
+        margin-left: 10px;
+    }
+
+    & li:last-of-type a span::after {
+        content: " ";
+    }
+}

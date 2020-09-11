@@ -1,0 +1,35 @@
+.format-outwear {
+    background-image: url('../../../assets/img/topsection-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    height: 575px;
+
+    & .sub-container {
+        background-color: #21343A;
+        width: 1000px;
+        margin: 0 auto;
+
+        & .format-jacket-img {
+            float: left;
+            margin-right: 25px;
+        }
+
+        & .format-title {
+            font-size: x-large;
+        }
+    }
+}
+
+:host::ng-deep .p-breadcrumb {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+:host::ng-deep .p-breadcrumb,
+:host::ng-deep .p-breadcrumb ul li .p-menuitem-link .p-menuitem-text,
+:host::ng-deep .p-breadcrumb ul li.p-breadcrumb-chevron {
+    color: white;
+}
