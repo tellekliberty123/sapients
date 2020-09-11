@@ -22,6 +22,9 @@ export class NavMenuComponent implements OnInit {
   items: MenuItem[];
   formGroup: FormGroup;
 
+  reviewTitleName: string;
+  writeReviewName: string;
+
   constructor(
     private formBuilderSvc: FormBuilder
   ) { }
@@ -45,7 +48,8 @@ export class NavMenuComponent implements OnInit {
       untilDestroyed(this)
     )
     .subscribe(values => {
-
+      this.reviewTitleName = this.formGroup.controls[`reviewTitle`].value;
+      this.writeReviewName = this.formGroup.controls[`writeReview`].value;
     });
   }
 
